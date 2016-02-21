@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/app.css" type="text/css"/>
+    <script src="js/app.js"></script>
+  </head>
+
+<body>
+    
+<header>
+    <div id="top_header">
+        <a href="#"><span class="glyphicon glyphicon-earphone"></span> Emergency</a>
+        
+    </div>
+<nav class="navbar navbar-inverse  navbar-fixed">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Bell Clinic</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Bell Clinic Staff</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Appointments <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Todays</a></li>
+            <li><a href="#">Weekly Schedule</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patients<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="patients.html">Add Patient</a></li>
+            <li><a href="inpatient.html">In-patient</a></li>
+            <li><a href="outpatient.html">Out-patient</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Billing</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Staff Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+          
+</header> 
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+		      <form role="form">
+			     <h2>Patient Details</h2>
+			     <hr class="colorgraph">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+				<div class="form-group">
+                    <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1" required>
+				</div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+				<div class="form-group">
+				    <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2" required>
+				</div>
+            </div>
+			</div>
+                  
+			<div class="form-group">
+				<input type="text" name="pid" id="pid" class="form-control input-lg" placeholder="PatientId" tabindex="3" required>
+			</div>
+            
+                 <div class="form-group" class="panel panel-default">
+                    <div class="radio">      
+                        &nbsp;&nbsp;<label><input type="radio" name="gender" id="gender">MALE</label>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="radio" name="gender" id="gender">FEMALE</label>
+                    </div>
+                </div>
+                  
+            <div class="form-group">
+				<input type="date" name="dob" id="dob" class="form-control input-lg" placeholder="Date Of Birth" tabindex="3" required>
+			</div>
+            
+			<div class="form-group">
+				<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4" required>
+			</div>
+                  
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="text" name="home phone" id="homephone" class="form-control input-lg" placeholder="Home Phone" tabindex="5" required>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="text" name="mobile" id="mobile" class="form-control input-lg" placeholder="Mobile" tabindex="6" required>
+					</div>
+				</div>   
+			</div>
+       
+            <div class="form-group"  class="ui-widget">
+				<input type="text" name="tags" id="tags" class="form-control input-lg" placeholder="Symptoms" tabindex="7" required>
+			</div>
+                  
+            <div class="form-group">
+				<input type="text" name="name" id="d_name" class="form-control input-lg" placeholder="Doctor Assigned" tabindex="8" required>
+			</div>
+                  
+            <div class="form-group">
+				<input type="text" name="notes" id="d_notes" class="form-control input-lg" placeholder="Doctor Notes" tabindex="9" required>
+			</div>
+                  
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<span class="button-checkbox">
+						<button type="button" class="btn" data-color="info" tabindex="10">In Patient</button>
+                        <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
+					</span>
+				</div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+					<span class="button-checkbox">
+						<button type="button" class="btn" data-color="info" tabindex="11">Out Patient</button>
+                        <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
+					</span>
+				</div>
+			</div>
+			
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-md-12"><input type="submit" value="Add Patient" class="btn btn-primary btn-block btn-lg" tabindex="12" onclick="return Validate()"></div>
+			</div>
+		</form>
+	</div>
+</div>
+</div>
+   
+<!--    footer-->
+<footer>
+<div class="container text-center">
+    <hr class="colorgraph">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Product for Mac</a></li>
+          <li><a href="#">Product for Windows</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Web analytics</a></li>
+          <li><a href="#">Presentations</a></li>          
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Product Help</a></li>
+          <li><a href="#">Developer API</a></li>
+        </ul>
+      </div>  
+    </div>
+  </div>
+  <hr class="colorgraph">
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/">© 2016 Bell Clinic.</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</footer>
+<!--    footer end-->    
+    
+</body> 
+</html>

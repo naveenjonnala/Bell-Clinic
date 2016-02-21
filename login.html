@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/app.css" type="text/css"/> 
+    <link rel="stylesheet" href="css/app.css" type="text/css"/>
     <script src="js/app.js"></script>
   </head>
 
 <body>
-    <header>
+<header>
     <div id="top_header">
         <a href="#"><span class="glyphicon glyphicon-earphone"></span> Emergency</a>
         
     </div>
-<nav class="navbar navbar-fixed">
+<nav class="navbar navbar-inverse  navbar-fixed">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -28,23 +28,25 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Appointments <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Todays</a></li>
-            <li><a href="#">Weekly Schedule</a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patients<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-            <li><a href="#">In-patient</a></li>
-            <li><a href="#">Out-patient</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Billing</a></li>
-      </ul>
+                <li><a href="#">Bell Clinic Staff</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Schedule<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Appointments Today</a></li>
+                    <li><a href="#">Weekly Schedule</a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patients<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="patients.html">Add Patient</a></li>
+                    <li><a href="inpatient.html">In-patient</a></li>
+                    <li><a href="outpatient.html">Out-patient</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Billing</a></li>
+              </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
         <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Staff Login</a></li>
@@ -89,6 +91,50 @@
 </div>
 
 </div>
-    
+<!--    footer-->
+<footer>
+<div class="container text-center">
+    <hr class="colorgraph">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Product for Mac</a></li>
+          <li><a href="#">Product for Windows</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Web analytics</a></li>
+          <li><a href="#">Presentations</a></li>          
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Product Help</a></li>
+          <li><a href="#">Developer API</a></li>
+        </ul>
+      </div>  
+    </div>
+  </div>
+  <hr class="colorgraph">
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/">© 2016 Bell Clinic.</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</footer>
+<!--    footer end-->
 </body>
 </html>
